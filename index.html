@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!--=============== BOXICONS ===============-->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Code With Anandu</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Code With Anandu</a>
+      <div>
+        <i class="bx bx-brush change__color change__purple" onclick="set_color_purple()"></i>
+        <i class="bx bx-brush change__color change__pink" onclick="set_color_pink()"></i>
+        <i class="bx bx-brush change__color change__orange" onclick="set_color_orange()"></i>
+        <i class="bx bx-brush change__color change__blue" onclick="set_color_blue()"></i>
+        <i class="bx bx-brush change__color change__bluegray" onclick="set_color_bluegray()"></i>
+      </div>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home-alt"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="bx bx-user"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-book"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">
+              <i class="bx bx-briefcase-alt-2"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="bx bx-message-square-detail"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Theme change button -->
+      <i class="bx bx-moon change-theme" id="theme-button"></i>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__greeting">Hello, I'm</span>
+          <h1 class="home__name">ANANDU VIJAYAN</h1>
+          <h3 class="home__education">FRONT-END Developer</h3>
+
+          <div class="home__buttons">
+            <a download="" href="./assets/pdf/ANANDU VIJAYAN VM.pdf" class="button button--ghost">
+              Download CV
+            </a>
+            <a href="#about" class="button">About me</a>
+          </div>
+        </div>
+        <div class="home__handle">
+          <img src="assets/img/Me.jpg" alt="home_img" class="home__img" />
+        </div>
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/anandu-vijayan-986a051ba" target="_blank" class="home__social-link">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://github.com/Anandu-Vijayan" target="_blank" class="home__social-link">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="http://wa.me/+91989576725" target="_blank" class="home__social-link">
+            <i class='bx bxl-whatsapp'></i>
+          </a>
+        </div>
+
+        <a href="#about" class="home__scroll">
+          <i class="bx bx-mouse home__scroll-icon"></i>
+          <span class="home__scroll-name">Scroll Down</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!--=============== ABOUT ===============-->
+    <section class="about section" id="about">
+      <span class="section__subtitle">My Intro</span>
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__container container grid">
+        <img src="assets/img/about.png" alt="" class="about__img">
+
+        <div class="about__data">
+          <div class="about__info">
+            <div class="about__box">
+              <i class="bx bx-award about__icon"></i>
+              <h3 class="about__title">Experience</h3>
+              <span class="about__subtitle">0 Years Working</span>
+            </div>
+
+
+            <div class="about__box">
+              <i class="bx bx-briefcase-alt about__icon"></i>
+              <h3 class="about__title">Completed</h3>
+              <span class="about__subtitle">3 Projects</span>
+            </div>
+
+            <div class="about__box">
+              <i class="bx bx-support about__icon"></i>
+              <h3 class="about__title">Support</h3>
+              <span class="about__subtitle">Online 24/7</span>
+            </div>
+          </div>
+          <p class="about__description">FRONT-END developer, I create web pages with UI / UX user interface,</p>
+
+          <a href="#contact" class="button">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== SKILLS ===============-->
+    <section class="skills section" id="skills">
+      <span class="section__subtitle">My abilities</span>
+      <h2 class="section__title">My Experience</h2>
+
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Front End Developer</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+               
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills__content">
+          <h3 class="skills__title">Front End Developer</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Bootstrap</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Git</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== SERVICES ===============-->
+    <!--=============== WORK ===============-->
+    <section class="work section" id="work">
+      <span class="section__subtitle">My Portfolio</span>
+      <h2 class="section__title">Recent Works</h2>
+
+      <div class="work__filters">
+        <span class="work__item active-work" data-filter='all'>All</span>
+        <span class="work__item" data-filter='.web'>Web</span>
+        <span class="work__item" data-filter='.mobil'>Mobil</span>
+        <span class="work__item" data-filter='.design'>Design</span>
+      </div>
+
+      <div class="work__container container grid">
+        <div class="work__card mix web">
+          <img src="assets/img/Zerodha-990x556.png" alt="" class="work__img">
+          <h3 class="work__title">Zerodha UI</h3>
+
+          <a href="https://anandu-vijayan.github.io/Zerodha/" class="work__button">
+            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+          </a>
+        </div>
+
+        <div class="work__card mix mobil">
+          <img
+            src="assets/img/header.jpg"
+            alt="" class="work__img">
+          <h3 class="work__title">Appex-Legend UI</h3>
+
+          <a href="https://anandu-vijayan.github.io/Apex-Legend/" class="work__button">
+            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+          </a>
+        </div>
+
+        <div class="work__card mix design">
+          <img src="assets/img/Instagram-Feature-2.webp" alt="" class="work__img">
+          <h3 class="work__title">Instagram UI</h3>
+
+          <a href="https://anandu-vijayan.github.io/instagram/" class="work__button">
+            Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+          </a>
+        </div>
+    </section>
+    <!--=============== CONTACT ===============-->
+    <section class="contact section" id="contact">
+      <span class="section__subtitle">Get in touch</span>
+      <h2 class="section__title">Contact Me</h2>
+
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <h3 class="contact__title">Talk to me</h3>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class="bx bxl-whatsapp contact__card--icon"></i>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+91-9895767256</span>
+
+              <a href="https://api.whatsapp.com/send?phone=+919895767256&text=Hello, more information!" target="_blank"
+                class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="bx bx-mail-send contact__card--icon"></i>
+              <h3 class="contact__card-title">Linkedin</h3>
+              <span class="contact__card-data">ANANDU VIJAYAN</span>
+
+              <a href="https://www.linkedin.com/in/anandu-vijayan-986a051ba" target="_blank" class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class="bx bx-mail-send contact__card--icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">ananduvijayan8@gmail.com</span>
+
+              <a href="mailto:ananduvijayan8@gmail.com" target="_blank" class="contact__button">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- FORM  -->
+        <div class="contact__content">
+          <h3 class="contact__title">Write me your project</h3>
+          <form onsubmit="handleSubmit(event)" id="submit-form" action="" class="contact__form" method="POST">
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Name</label>
+              <input autocomplete="off" type="text" id="name" onkeyup="validate();" placeholder="Insert your name"
+                class="contact__form-input" name="name">
+              <span class="nameIndicator"></span>
+              <span class="name-text"></span>
+            </div>
+
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Mail</label>
+              <input autocomplete="off" id="email" onkeyup="validate();" name="email" type="text" placeholder="Insert your email"
+                class="contact__form-input">
+              <span class="indicator"></span>
+              <span class="indicator-text"></span>
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label for="" class="contact__form-tag">Project</label>
+              <textarea onkeyup="validate();" name="message" id="message" cols="30" rows="10"
+                placeholder="Write your project" class="contact__form-input"></textarea>
+              <span class="messageIndicator"></span>
+              <span class="message-text"></span>
+
+            </div>
+
+            <button type="submit" onclick="handleSubmit(event)" id="send" class="button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Form Validation JS  -->
+  <script>
+    function validate() {
+      const form = document.getElementById("submit-form");
+      const email = document.getElementById("email").value;
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const send = document.getElementById("send");
+      const emailText = document.querySelector(".indicator-text");
+      const messageText = document.querySelector(".message-text");
+      const nameText = document.querySelector(".name-text");
+      const response = {
+        email: false,
+        name: false,
+        message: false
+      }
+      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+      if (email.match(pattern)) {
+        form.classList.add('valid');
+        form.classList.remove('invalid');
+        emailText.innerHTML = ""
+        send.addEventListener("click", function (e) {
+          emailText.innerHTML = ""
+        })
+        response.email = true;
+
+      } else {
+        form.classList.add('invalid');
+        form.classList.remove('valid');
+        send.addEventListener("click", function (e) {
+          e.preventDefault();
+          emailText.innerHTML = "Enter Valid Email"
+        })
+        response.email = false;
+
+      }
+      if (email == "") {
+        form.classList.add('invalid');
+        form.classList.remove('valid');
+        response.email = false;
+      }
+      if (name.match(/[0-9]/)||name=="") {
+        form.classList.add('nameInvalid');
+        form.classList.remove('nameValid');
+        send.addEventListener("click",function(e){
+          e.preventDefault();
+          nameText.innerHTML = "Name cannot be empty!"
+        })
+        response.name = false;
+
+      } else {
+        form.classList.add('nameValid');
+        form.classList.remove('nameInvalid');
+        nameText.innerHTML = ""
+        send.addEventListener("click", function (e) {
+          nameText.innerHTML = ""
+        })
+
+        response.name = true;
+
+      }
+      if (message.length < 5) {
+        form.classList.add('messageInvalid');
+        form.classList.remove('messageValid');
+        send.addEventListener("click", function (e) {
+          e.preventDefault();
+          messageText.innerHTML = "Messsage cannot be empty!"
+
+        })
+        response.message = false;
+
+      } else {
+        form.classList.add('messageValid');
+        form.classList.remove('messageInvalid');
+        messageText.innerHTML = ""
+        send.addEventListener("click", function (e) {
+          messageText.innerHTML = ""
+
+        })
+
+        response.message = true;
+      }
+      if (response.email && response.message && response.name) {
+
+        return true;
+      } else {
+
+        return false;
+      }
+    }
+  </script>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Code With Anandu</h1>
+
+      <ul class="footer__list">
+        <li>
+          <a href="#about" class="footer__link">About</a>
+        </li>
+        <li>
+          <a href="#work" class="footer__link">Projects</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social">
+        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/tony_martin6p/?hl=en" target="_blank" class="footer__social-link">
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; CodewithAnandu. All rights reserved
+      </span>
+    </div>
+  </footer>
+
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!--=============== MIXITUP FILTER ===============-->
+  <script src="assets/js/mixitup.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <!-- Google sheets script  -->
+  <script>
+    async function handleSubmit(event) {
+      const isValidated = await validate();
+      console.log(isValidated);
+      if (isValidated) {
+
+        event.preventDefault()
+
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbyQYrmM7iKF54XbjV7hvYtJ19MCqOH4fhZr3oi6aUSzDZGgmp6vQnqxka1C3TedUx3Dag/exec",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Form submitted successfully")
+            window.location.reload()
+          },
+          error: function (err) {
+            alert("Something Error")
+
+          }
+        })
+
+      } else {
+        event.preventDefault();
+      }
+
+    }
+
+
+  </script>
+</body>
+
+</html>
